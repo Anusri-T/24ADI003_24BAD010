@@ -1,0 +1,146 @@
+Scenario 1: Ocean Water Temperature Prediction (Regression)
+Problem Statement
+
+The objective of this scenario is to predict ocean water temperature using environmental and depth-related parameters. This is a supervised regression problem where Linear Regression and its optimized variants are applied.
+
+Dataset
+
+Source: Kaggle (Public)
+
+Dataset Name: CalCOFI (California Cooperative Oceanic Fisheries Investigations)
+
+Link: https://www.kaggle.com/datasets/sohier/calcofi
+
+Target Variable
+
+Water Temperature: T_degC
+
+Input Features
+
+Depth (m)
+
+Salinity
+
+Oxygen
+
+Latitude
+
+Longitude
+
+Tasks Performed
+
+Imported required Python libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)
+
+Loaded CalCOFI dataset into a Pandas DataFrame
+
+Selected relevant numerical features and target variable
+
+Handled missing values using mean / median imputation
+
+Performed feature scaling using StandardScaler
+
+Split dataset into training and testing sets
+
+Trained a Linear Regression model
+
+Predicted water temperature for test data
+
+Evaluated model performance using:
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+Visualized results:
+
+Actual vs Predicted temperature
+
+Residual error plot
+
+Optimized model using:
+
+Feature selection
+
+Regularization techniques (Ridge and Lasso Regression)
+
+Outcome
+
+The optimized regression model was able to predict ocean water temperature with improved accuracy and reduced error, demonstrating the effectiveness of feature scaling and regularization.
+Scenario 2: LIC Stock Price Movement Prediction (Classification)
+Problem Statement
+
+The goal of this scenario is to classify whether LIC stock price will increase or decrease based on historical stock market data using Logistic Regression.
+
+Dataset
+
+Source: Kaggle (Public)
+
+Dataset Name: LIC Stock Price Data
+
+Link: https://www.kaggle.com/datasets/debashis74017/lic-stock-price-data
+
+Target Variable (Derived)
+
+Price Movement
+
+1 → Closing Price > Opening Price
+
+0 → Closing Price ≤ Opening Price
+
+Input Features
+
+Open
+
+High
+
+Low
+
+Volume
+
+Tasks Performed
+
+Imported necessary Python libraries
+
+Loaded LIC stock dataset into Pandas DataFrame
+
+Created a binary target variable (Price Movement)
+
+Handled missing values
+
+Applied feature scaling
+
+Split data into training and testing sets
+
+Trained a Logistic Regression model
+
+Predicted stock price movement
+
+Evaluated classification performance using:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+Visualized:
+
+ROC Curve
+
+Feature importance
+
+Optimized model using:
+
+Hyperparameter tuning (C, penalty)
+
+Regularization techniques
+
+Outcome
+
+The Logistic Regression model successfully classified stock price movements with good performance metrics, showing the importance of proper feature scaling and regularization.
