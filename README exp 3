@@ -1,0 +1,132 @@
+Scenario 1: Multilinear Regression – Student Performance Prediction
+Problem Statement
+
+Predict student academic performance using academic, behavioral, and lifestyle factors.
+
+ Dataset
+
+Source: Kaggle
+
+Link: https://www.kaggle.com/datasets/spscientist/students-performance-in-exams
+
+ Target Variable
+
+Final Exam Score
+(Average of Math, Reading, and Writing scores)
+
+Input Features
+
+Study hours per day
+
+Attendance percentage
+
+Parental education level (encoded)
+
+Test preparation course (encoded)
+
+Sleep hours
+
+ Methodology
+
+Import required Python libraries
+
+Load the student performance dataset
+
+Preprocess data and encode categorical features
+
+Compute the target variable
+
+Handle missing values using imputation
+
+Apply feature scaling
+
+Split data into training and testing sets
+
+Train a Multilinear Regression model
+
+Predict student performance
+
+Evaluate the model using:
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+Analyze regression coefficients to understand feature influence
+
+Optimize the model using:
+
+Feature elimination
+
+Ridge Regression
+
+Lasso Regression
+
+ Visualizations
+
+Predicted vs Actual exam scores
+
+Regression coefficient magnitude comparison
+
+Residual distribution plot
+
+ Scenario 2: Polynomial Regression – Vehicle Fuel Efficiency Prediction
+ Problem Statement
+
+Predict vehicle fuel efficiency (MPG) using engine horsepower, where the relationship is non-linear.
+
+ Dataset
+
+Source: Kaggle (UCI ML Repository)
+
+Link: https://www.kaggle.com/datasets/uciml/autompg-dataset
+
+ Target Variable
+
+Miles Per Gallon (MPG)
+
+Input Feature
+
+Engine Horsepower
+
+ Methodology
+
+Import required Python libraries
+
+Load and clean the Auto MPG dataset
+
+Select horsepower as the independent variable
+
+Handle missing values
+
+Generate polynomial features (Degree 2, 3, and 4)
+
+Apply feature scaling
+
+Split the dataset into training and testing sets
+
+Train Polynomial Regression models
+
+Predict fuel efficiency values
+
+Evaluate each model using:
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+Compare performance across polynomial degrees
+
+Apply Ridge Regression to reduce overfitting
+
+ Visualizations
+
+Polynomial curve fitting for different degrees
+
+Training vs Testing error comparison
+
+Overfitting and underfitting demonstration
