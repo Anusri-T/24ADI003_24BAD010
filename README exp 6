@@ -1,0 +1,79 @@
+Scenario 1 – Bagging
+
+Problem: Predict whether a patient has diabetes
+
+Dataset: Diabetes Dataset
+
+Target Variable: Outcome (0 = No Diabetes, 1 = Diabetes)
+
+Features: Glucose, BMI, Age, Blood Pressure, etc.
+
+Tasks: Load dataset Train Decision Tree model Apply Bagging Classifier Compare accuracy
+
+Visualization: Accuracy comparison bar graph Confusion matrix
+
+Outcome: Bagging improved prediction accuracy compared to a single Decision Tree. Reduced overfitting and provided more stable results. Better classification performance observed in confusion matrix.
+
+Scenario 2 – Boosting
+
+Problem: Predict customer churn
+
+Dataset: Telco Customer Churn Dataset
+
+Target Variable: Churn (Yes/No)
+
+Features: Tenure, Monthly Charges, Contract Type
+
+Tasks: Train AdaBoost model Train Gradient Boosting model Compare performance
+
+Visualization: ROC Curve Feature Importance plot
+
+Outcome: Boosting models outperformed basic models by focusing on difficult cases. Gradient Boosting generally achieved higher accuracy than AdaBoost. ROC curve showed improved classification capability.
+
+Scenario 3 – Random Forest
+
+Problem: Predict income level (>50K or <=50K)
+
+Dataset: Adult Income Dataset
+
+Target Variable: Income
+
+Features: Age, Education, Occupation, Hours-per-week
+
+Tasks: Train Random Forest model Tune number of trees Evaluate performance
+
+Visualization: Feature Importance Accuracy vs Number of Trees graph
+
+Outcome: Increasing the number of trees improved accuracy up to an optimal point. Random Forest reduced overfitting compared to a single Decision Tree. Feature importance helped identify key predictors of income.
+
+Scenario 4 – Stacking
+
+Problem: Predict heart disease
+
+Dataset: Heart Disease Dataset
+
+Target Variable: Presence of Heart Disease (0/1)
+
+Features: Cholesterol, Max Heart Rate, Age
+
+Tasks: Train base models: Logistic Regression SVM Decision Tree Combine using Stacking Classifier Compare with individual models
+
+Visualization: Model comparison bar chart
+
+Outcome: Stacking improved overall performance by combining multiple models. Achieved better accuracy than individual base models. Leveraged strengths of different algorithms effectively.
+
+Scenario 5 – SMOTE
+
+Problem: Detect fraudulent transactions
+
+Dataset: Credit Card Fraud Detection Dataset
+
+Target Variable: Fraud (0 = Normal, 1 = Fraud)
+
+Features: Transaction Amount, Time, PCA features
+
+Tasks: Check class imbalance Apply SMOTE Train model before & after SMOTE Compare performance
+
+Visualization: Class distribution (Before & After SMOTE) Precision-Recall Curve
+
+Outcome: SMOTE balanced the dataset by generating synthetic minority samples. Improved recall and detection of fraudulent transactions. Precision-Recall curve showed better performance after applying SMOTE.
