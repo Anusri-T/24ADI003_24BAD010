@@ -1,0 +1,35 @@
+SCENARIO 1: User-Based Collaborative Filtering
+
+Dataset: MovieLens 100K Dataset (Kaggle – Public) Link:https://www.kaggle.com/datasets/rajmehra03/movielens100k
+
+Objective: To recommend movies to users based on similar users’ preferences and analyze user similarity patterns.
+
+Tasks Performed:
+
+Imported required Python libraries. Loaded the dataset into a Pandas DataFrame. Inspected the dataset and checked for missing values. Created a User-Item matrix using ratings data. Handled missing values by filling with 0/mean. Computed user similarity using cosine similarity. Identified top-N similar users. Predicted ratings for unseen movies. Generated Top-N movie recommendations. Evaluated model using RMSE and MAE.
+
+Visualized:
+
+User-Item matrix using heatmap. User similarity matrix. Top recommended movies using bar charts.
+
+Outcome:
+
+The model successfully generated personalized movie recommendations by identifying similar users. It provided reasonable prediction accuracy using RMSE and MAE. However, sparsity in the dataset and cold-start issues affected performance.
+
+SCENARIO 2: Item-Based Collaborative Filtering
+
+Dataset: MovieLens Dataset / Alternative Dataset (Kaggle – Public) Link:https://www.kaggle.com/datasets/rajmehra03/movielens100k
+
+Objective: To recommend similar movies based on user ratings and analyze item relationships.
+
+Tasks Performed:
+
+Loaded the dataset into Pandas. Created an Item-User matrix from ratings data. Computed item similarity using cosine similarity/Pearson correlation. Identified top-N similar items. Generated recommendations based on user history. Compared item-based recommendations with user-based approach. Evaluated model using RMSE and Precision@K.
+
+Visualized:
+
+Item similarity matrix using heatmap. Top similar movies using bar graphs. Recommendation comparison charts.
+
+Outcome:
+
+The model effectively recommended similar movies based on item relationships. It showed better scalability and consistency compared to user-based filtering. Performance was more stable, especially for popular items with sufficient ratings.
