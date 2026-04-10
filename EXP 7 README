@@ -1,0 +1,100 @@
+This project focuses on customer segmentation using two popular unsupervised machine learning techniques:
+
+K-Means Clustering (Hard Clustering)
+Gaussian Mixture Model (GMM) (Soft Clustering)
+
+The goal is to group customers based on their purchasing behavior and income patterns, helping businesses understand different customer segments for targeted marketing.
+
+Dataset
+
+Dataset Name: Mall Customer Segmentation Dataset
+Source: Kaggle
+Link: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+
+Features Used
+Annual Income (k$)
+Spending Score (1–100)
+Age (Optional)
+Target Variable
+No predefined labels (Unsupervised Learning)
+Output: Cluster labels / probabilities
+SCENARIO 1 – K-MEANS CLUSTERING
+Objective
+
+To group customers into distinct clusters based on similarity using K-Means clustering.
+
+Steps Performed
+Imported required libraries:
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
+Loaded the dataset
+Data preprocessing:
+Checked and handled missing values
+Scaled features using StandardScaler
+Selected relevant features:
+Annual Income
+Spending Score
+Determined optimal number of clusters using Elbow Method
+Applied K-Means algorithm
+Assigned cluster labels to each data point
+Visualized clusters using scatter plots
+Interpreted cluster characteristics
+Evaluation Metrics
+Inertia (WCSS – Within Cluster Sum of Squares)
+Silhouette Score
+Analysis
+Observed how different values of K affect clustering
+Evaluated compactness and separation of clusters
+Identified customer segments such as:
+High Income – High Spending
+High Income – Low Spending
+Low Income – High Spending
+Low Income – Low Spending
+Studied sensitivity to centroid initialization
+Visualizations
+Elbow Curve (K vs Inertia)
+Cluster Scatter Plot
+Cluster Centroids
+Key Insights
+K-Means creates hard clusters (each point belongs to only one cluster)
+Works best for spherical and well-separated clusters
+Sensitive to initial centroid selection
+SCENARIO 2 – GAUSSIAN MIXTURE MODEL (GMM)
+Objective
+
+To cluster customers using probabilistic modeling and capture uncertainty in cluster membership.
+
+Steps Performed
+Loaded dataset
+Preprocessed data:
+Handled missing values
+Applied feature scaling
+Applied Gaussian Mixture Model (GMM)
+Selected number of components (clusters)
+Fitted model using Expectation-Maximization (EM) algorithm
+Predicted cluster probabilities
+Assigned clusters based on highest probability
+Compared results with K-Means clustering
+Evaluation Metrics
+Log-Likelihood
+AIC (Akaike Information Criterion)
+BIC (Bayesian Information Criterion)
+Silhouette Score
+Analysis
+Compared soft clustering (GMM) vs hard clustering (K-Means)
+Observed overlapping clusters
+Analyzed cluster shapes:
+GMM supports elliptical clusters
+K-Means assumes spherical clusters
+Evaluated flexibility of GMM over K-Means
+Visualizations
+Cluster Probability Distribution
+GMM Contour Plots
+Comparison Plot (K-Means vs GMM)
+Key Insights
+GMM provides probabilistic clustering
+Handles overlapping clusters better than K-Means
+More flexible but computationally expensive
+Useful when clusters are not clearly separated
