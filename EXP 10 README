@@ -1,0 +1,101 @@
+Overview
+
+This project implements a movie recommendation system using two matrix factorization techniques:
+
+Scenario 1: Singular Value Decomposition (SVD)
+Scenario 2: Non-negative Matrix Factorization (NMF)
+
+The system uses the MovieLens 100K dataset to predict user ratings for unseen movies and recommend top movies based on user preferences.
+
+Dataset
+
+Dataset Used: MovieLens 100K
+Source: Kaggle
+Link: https://www.kaggle.com/datasets/abhikjha/movielens-100k
+
+Features:
+User ID
+Movie ID
+Rating
+Target:
+Predict ratings for unseen movies
+Scenario 1: Matrix Factorization using SVD
+Objective
+
+To decompose the user-item rating matrix into latent factors and predict missing ratings.
+
+Steps Performed
+Imported required libraries:
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
+SciPy
+Loaded MovieLens dataset
+Performed preprocessing:
+Checked missing values
+Converted data into pivot table
+Created User-Item Interaction Matrix
+Applied Mean Centering (Normalization)
+Applied Singular Value Decomposition (SVD)
+Selected optimal latent factors (k)
+Reconstructed rating matrix
+Predicted missing ratings
+Generated Top-N movie recommendations
+Evaluation Metrics
+RMSE (Root Mean Square Error)
+MAE (Mean Absolute Error)
+Analysis
+Studied impact of different latent factors (k)
+Compared actual and predicted ratings
+Observed dimensionality reduction benefits
+Checked overfitting and underfitting behavior
+Visualizations
+Heatmap of original user-item matrix
+Heatmap of reconstructed matrix
+Error vs latent factors graph
+Top recommended movies chart
+Scenario 2: Matrix Factorization using NMF
+Objective
+
+To use Non-negative Matrix Factorization for discovering hidden user-item preference patterns.
+
+Steps Performed
+Loaded dataset
+Created user-item matrix
+Handled missing values:
+Filled with 0 / mean values
+Applied NMF model
+Factorized matrix into:
+User-feature matrix
+Item-feature matrix
+Reconstructed matrix
+Predicted ratings
+Generated Top-N recommendations
+Evaluation Metrics
+RMSE
+Precision@K
+Recall@K
+Analysis
+Compared recommendation accuracy with SVD
+Observed interpretability of NMF factors
+Analyzed sparse matrix handling
+Compared diversity in recommendations
+Visualizations
+Latent feature matrix plots
+Original vs reconstructed matrix comparison
+Top movie recommendation rankings
+Technologies Used
+Python
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
+SciPy
+Conclusion
+
+This project demonstrates how matrix factorization techniques like SVD and NMF can effectively build recommendation systems.
+SVD provides better accuracy for dense latent patterns, while NMF offers better interpretability and handles sparse data efficiently.
+Both methods help improve personalized movie recommendations.
