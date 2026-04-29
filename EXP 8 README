@@ -1,0 +1,75 @@
+SCENARIO 1 – ASSOCIATION RULE MINING (Apriori)
+ Problem Statement
+
+Identify frequent itemsets and generate association rules from transactional data using the Apriori algorithm.
+
+Dataset
+
+Groceries / Market Basket Dataset
+
+ Input Features
+Transaction ID
+Items purchased
+ Target
+Association rules (relationships between items)
+Steps Performed
+Imported required libraries
+Loaded dataset
+Converted transactional data into one-hot encoded format
+Applied Apriori algorithm
+Set minimum support threshold
+Generated frequent itemsets
+Generated association rules
+Filtered rules using confidence and lift
+ Evaluation Metrics
+Support
+Confidence
+Lift
+ Analysis
+Effect of support threshold on frequent itemsets
+Identification of strong association rules
+Comparison of rules using different confidence values
+Interpretation of real-world relationships between items
+ Visualization
+Bar chart of frequent itemsets
+Support vs Confidence plot
+Network graph of association rules
+🔹 SCENARIO 2 – DIMENSIONALITY REDUCTION (PCA)
+Problem Statement
+
+Reduce high-dimensional data into lower dimensions while preserving maximum variance using PCA.
+
+ Dataset
+
+Iris Dataset / Any dataset with numerical features
+
+ Input Features
+Numerical attributes (e.g., measurements)
+Target
+Principal Components (reduced feature set)
+Steps Performed
+Loaded dataset
+Handled missing values
+Standardized features
+Computed covariance matrix
+Performed eigen decomposition
+Calculated explained variance ratio
+Reduced dimensions (2D/3D)
+Visualized transformed data
+ Evaluation Metrics
+Explained Variance Ratio
+Cumulative Variance
+ Analysis
+Variance captured by each principal component
+Selection of optimal number of components
+Comparison of original vs reduced data
+Visualization improvement after reduction
+Visualization
+Scree Plot
+2D Scatter Plot
+3D Scatter Plot
+Cumulative Variance Graph
+ Conclusion
+Apriori helps discover hidden patterns in transactional data.
+PCA reduces dimensionality while preserving important information.
+Both techniques improve data understanding and decision-making.
